@@ -13,7 +13,7 @@
     background-color: #fff;
 }
 
-.mainProfileBlock aside {
+.mainProfileBlock>aside {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -30,8 +30,8 @@
     color: deeppink;
     font-weight: bold;
     text-transform: uppercase;
-    background-color: #efefef66;
-    border-bottom: 1px soli #efefef;
+    background-color: #efefef;
+    border-bottom: 1px solid #efefef;
 }
 
 .mainProfileBlock aside figure img {
@@ -112,11 +112,6 @@
     padding: 20px 0;
 }
 
-.mainProfileBlock>article {
-    text-align: center;
-    padding: 20px 0;
-}
-
 .profilePhotoBlock>article {
     background-color: #fff;
     display: flex;
@@ -160,7 +155,23 @@
 }
 
 .profilePhotoBlock form button:hover {
-    background-color: transparent;
-    color: #6739b7;
+    background-color: #9c27b0;
+    color: #fff;
     border: 1px solid #6739b7;
+}
+
+.profilePhotoBlock article figure img {
+    width: 200px;
+    height: 200px;
+}
+
+.progress {
+    width: 99%;
+    /* background-color: #4caf50; */
+    color: #fff;
+    padding: 10px;
+    margin: 13px;
+    display: block;
+    border-radius: 3px;
+    border: 1px solid #8bc34a;
 }

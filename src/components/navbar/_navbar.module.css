@@ -1,5 +1,3 @@
-
-
 .logoutBtn {
     padding: 7px 15px;
     font-size: 14px;
@@ -140,7 +138,8 @@
         background-color: #fff;
         height: 70px;
         width: 100%;
-        box-shadow: 1px 0 3px;
+        box-shadow: 1px 0 3px #222;
+        margin-bottom: 2px;
     }
 
     .hamBlock {
