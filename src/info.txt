@@ -1,0 +1,19 @@
+//!frontend : html,css ,js ,reactjs, context api
+Google firebase(Bass) as backend as a service
+database : firebase(realtime database or firestore)
+//!Firebase : providing authentication and authorization
+    realtime database or firebase firestore
+    firestore storage for storing files
+    cloud functions
+    firebase deploy
+    
+    deployment=> host your application on cloud or remote servers
+
+
+//! Libraries : 
+            react-moment
+            react-toastify
+            moment
+            dotenv
+            firebase@latest
+            react-icons

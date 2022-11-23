@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Lato&family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --base-color: #6739b7
+}
+
+#spinnerBlock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#spinnerBlock svg {
+    width: 100px;
+    overflow: visible;
+}
+
+#spinnerBlock svg circle {
+    stroke: var(--base-color);
+    transform-origin: 50px 50px;
+    animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        width: 100%;
+        font-family: 'Lato', sans-serif;
+        background-color: #555;
+    }
+
+    .active {
+        background-color: #6739b7 ;
+        color: #fff !important;
+        border: 1px solid #6739b7 ;
+
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        width: 100%;
+        font-family: 'Lato', sans-serif;
+        background-color: #efefef;
+    }
+
+    .active {
+        background-color: #6739b7 !important;
+        color: #fff !important;
+        border: 1px solid #6739b7 !important;
+
+    }
+}
+
+#spinnerBlock {}
