@@ -42,8 +42,9 @@ const UploadPhoto = () => {
       uploadImageTask.on(
         "state_changed",
         snapshot => {
-          let progressBarData =
-            (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+          let progressBarData = parseInt(
+            (snapshot.bytesTransferred / snapshot.totalBytes) * 100
+          );
           //progress bar
           setProgressBar(progressBarData);
           setStatusBar(true);
@@ -85,6 +86,14 @@ const UploadPhoto = () => {
         <p className="bar" style={{ width: `${progressBar} %` }}>
           {progressBar} %
         </p>
+        <progress
+          id="file"
+          value={progressBar}
+          min="0"
+          max="100"
+          style={{ height: "30px" }}
+        ></progress>
+        {/* <meter value={progressBar} min="0" low="25" high="75" max="100"></meter> */}
       </div>
     );
   };

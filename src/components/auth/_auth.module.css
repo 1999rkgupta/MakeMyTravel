@@ -305,3 +305,21 @@
     display: inline-block;
     padding: 10px 0;
 }
+
+.phoneAuth {
+    padding: 10px;
+    background-color: #6739b7;
+    color: #fff;
+    text-transform: capitalize;
+    text-decoration: none;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin: 11px auto;
+    border-radius: 5px;
+}
+
+.phoneAuth:hover {
+    color: #fff;
+    background-color: #34008e;
+}

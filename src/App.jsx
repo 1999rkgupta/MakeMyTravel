@@ -14,6 +14,14 @@ import Profile from "./components/profile/Profile";
 import Spinner from "./pages/Spinner";
 import UploadPhoto from "./components/profile/UploadPhoto";
 import ProfileDefault from "./components/profile/ProfileDefault";
+import UpdatePhone from "./components/profile/UpdatePhone";
+import ResetPassword from "./components/auth/ResetPassword";
+import PhoneAuth from "./components/auth/PhoneAuth";
+import AddProfileData from "./components/profile/AddProfileData";
+import Hotels from "./components/hotelsandcity/Hotels";
+import AddHotel from "./components/hotelsandcity/AddHotel";
+import Admin from "./components/admin/Admin";
+import AdminRoute from "./routes/AdminRoute";
 
 const App = () => {
   return (
@@ -30,11 +38,45 @@ const App = () => {
               </ProtectedRoute>
             }
           />
+          {/* hotel route */}
+          <Route
+            path="/admin"
+            element={
+              <AdminRoute>
+                <Admin />
+              </AdminRoute>
+            }
+          />
+          <Route
+            path="/add-hotel"
+            element={
+              <ProtectedRoute>
+                <AddHotel />
+              </ProtectedRoute>
+            }
+          />
           <Route
             path="/login"
             element={
               <PublicRoute>
                 <Login />
+              </PublicRoute>
+            }
+          />
+          <Route
+            path="/phone-auth"
+            element={
+              <PublicRoute>
+                <PhoneAuth />
+              </PublicRoute>
+            }
+          />
+
+          <Route
+            path="/reset-password"
+            element={
+              <PublicRoute>
+                <ResetPassword />
               </PublicRoute>
             }
           />
@@ -67,6 +109,14 @@ const App = () => {
               element={
                 <ProtectedRoute>
                   <UploadPhoto />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="add-profile"
+              element={
+                <ProtectedRoute>
+                  <AddProfileData />
                 </ProtectedRoute>
               }
             />

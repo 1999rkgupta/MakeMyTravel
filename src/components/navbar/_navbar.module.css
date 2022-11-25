@@ -7,7 +7,8 @@
     border-radius: 5px;
     font-weight: 900;
     letter-spacing: 1px;
-    border: 2px solid #6739b7;
+    border: 1px solid #6739b7;
+    cursor: pointer;
 }
 
 .avatarURL {
@@ -23,7 +24,6 @@
     border-radius: 100%;
     margin: 4px 10px;
     cursor: pointer;
-    border: 2px solid #6739b7;
 }
 
 @media only screen and (max-width: 620px) {
@@ -136,10 +136,13 @@
 @media only screen and (min-width: 768px) {
     #navbarBlock {
         background-color: #fff;
-        height: 70px;
+        height: 60px;
         width: 100%;
         box-shadow: 1px 0 3px #222;
         margin-bottom: 2px;
+        position: sticky;
+        top: 0;
+        z-index: 2;
     }
 
     .hamBlock {
@@ -186,7 +189,7 @@
         align-items: center;
     }
 
-    .menuBlock ul li a {
+    .menuBlock ul>li>a {
         text-decoration: none;
         padding: 10px 20px;
         font-size: 14px;

@@ -90,6 +90,7 @@
     width: 100%;
     text-align: center;
     bottom: 0;
+    color: #fff;
     height: 36px;
     display: flex;
     align-items: center;
@@ -141,7 +142,8 @@
     border-radius: 5px;
 }
 
-.profilePhotoBlock form button {
+.profilePhotoBlock form button,
+.profileForm button {
     margin: 10px 0;
     border-radius: 5px;
     color: #fff;
@@ -154,7 +156,8 @@
     text-transform: uppercase;
 }
 
-.profilePhotoBlock form button:hover {
+.profilePhotoBlock form button:hover,
+.profileForm button:hover {
     background-color: #9c27b0;
     color: #fff;
     border: 1px solid #6739b7;
@@ -174,4 +177,70 @@
     display: block;
     border-radius: 3px;
     border: 1px solid #8bc34a;
+}
+
+.profileForm {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.profileForm div {
+    flex-basis: 24%;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.profileForm div span {
+    padding: 5px 10px;
+    color: #6739b7;
+    margin: 2px 4px;
+    display: inline-flex;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+#textArea {
+    flex-basis: 100%;
+}
+
+.profileForm div label {
+    width: 100%;
+    display: block;
+    padding-block-end: 5px;
+    color: #111;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.profileForm div input[type="text"],
+.profileForm div textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.profileForm div input[type="radio"] {
+    margin: 0 4px;
+}
+
+.profileUser {
+    text-align: center;
+    padding: 10px 40px;
+    background: #efefef57;
+    color: #3f51b5;
+    font-size: 17px;
+    text-transform: capitalize;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+.profileUser p {
+    padding: 10px 0;
+}
+
+.profileUser strong {
+    color: deeppink;
 }

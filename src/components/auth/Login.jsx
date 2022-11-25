@@ -45,6 +45,9 @@ const Login = () => {
       <article>
         <div className="container">
           <h1>Login</h1>
+          <Link to="/phone-auth" className={Styles.phoneAuth}>
+            Login with Phone Number
+          </Link>
           <form onSubmit={handleSubmit}>
             <div className="form-group">
               <label htmlFor="">Email</label>

@@ -1,19 +1,20 @@
 import React, { Fragment, useContext } from "react";
 import Styles from "./_navbar.module.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { AuthContext } from "./../../Apis/AuthContextApi";
-import { auth } from "firebase/auth";
 
 const Menu = () => {
   let { authUser, isLoading, Logout } = useContext(AuthContext);
   let AuthenticatedUser = () => {
     return (
       <Fragment>
-        <li>
-          <NavLink to="/profile" className={Styles.avatarURL}>
-            <img src={authUser.photoURL} alt={authUser.username} />
-          </NavLink>
-        </li>
+        <Link
+          to="/profile"
+          className={Styles.avatarURL}
+          activeClassName="hello"
+        >
+          <img src={authUser.photoURL} alt={authUser.username} />
+        </Link>
         <li>
           <button className={Styles.logoutBtn} onClick={() => Logout()}>
             Logout
