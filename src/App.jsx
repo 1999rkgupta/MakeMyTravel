@@ -22,6 +22,10 @@ import Hotels from "./components/hotelsandcity/Hotels";
 import AddHotel from "./components/hotelsandcity/AddHotel";
 import Admin from "./components/admin/Admin";
 import AdminRoute from "./routes/AdminRoute";
+import ListOfUsers from "./components/admin/ListOfUsers";
+import Users from "./components/admin/Users";
+import AdminPanelContainer from "./components/admin/AdminPanelContainer";
+import UserDetails from "./components/admin/UserDetails";
 
 const App = () => {
   return (
@@ -46,7 +50,32 @@ const App = () => {
                 <Admin />
               </AdminRoute>
             }
-          />
+          >
+            <Route
+              index
+              element={
+                <AdminRoute>
+                  <AdminPanelContainer />
+                </AdminRoute>
+              }
+            />
+            <Route
+              path="users"
+              element={
+                <AdminRoute>
+                  <Users />
+                </AdminRoute>
+              }
+            />
+            <Route
+              path=":id"
+              element={
+                <AdminRoute>
+                  <UserDetails />
+                </AdminRoute>
+              }
+            />
+          </Route>
           <Route
             path="/add-hotel"
             element={
