@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/MakeMyTravel/static/css/main.219c9232.css",
+    "main.js": "/MakeMyTravel/static/js/main.72f0bfb9.js",
+    "static/media/imag2.jpg": "/MakeMyTravel/static/media/imag2.e69126beba5ca53f9a96.jpg",
+    "static/media/imag1.jpg": "/MakeMyTravel/static/media/imag1.bae0862c3310384100ce.jpg",
+    "static/media/imag1.avif": "/MakeMyTravel/static/media/imag1.2eb17c51ddacdafa1649.avif",
+    "index.html": "/MakeMyTravel/index.html",
+    "main.219c9232.css.map": "/MakeMyTravel/static/css/main.219c9232.css.map",
+    "main.72f0bfb9.js.map": "/MakeMyTravel/static/js/main.72f0bfb9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.219c9232.css",
+    "static/js/main.72f0bfb9.js"
+  ]
+}
