@@ -83,7 +83,7 @@ const UploadPhoto = () => {
             : { background: "green" }
         }
       >
-        <p className="bar" style={{ width: `${progressBar} %` }}>
+        <p className="bar" style={{ width: `${progressBar} %`, color: "blue" }}>
           {progressBar} %
         </p>
         <progress

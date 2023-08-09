@@ -3,7 +3,7 @@ import React from "react";
 const Spinner = () => {
   return (
     <section id="spinnerBlock">
-      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox="0 0 100 100" >
         <circle
           cx={50}
           cy={50}
