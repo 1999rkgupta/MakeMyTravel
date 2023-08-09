@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Lato&family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --base-color: #6739b7
+}
+
+#spinnerBlock {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#spinnerBlock svg {
+    width: 100px;
+    overflow: visible;
+}
+
+#spinnerBlock svg circle {
+    stroke: var(--base-color);
+    transform-origin: 50px 50px;
+    animation: spin 1.2s linear infinite;
+}
+
+
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.carousel .carousel-status {
+    display: none;
+}
+
+.slider-wrapper {
+    height: 85vh !important;
+}
+
+.slider-wrapper img {
+    height: 600px !important;
+    object-fit: cover !important;
+}
+
+.slide .legend {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0% !important;
+    margin-left: 0 !important;
+    width: 50% !important;
+    border-radius: 0 !important;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+    opacity: 0.25;
+    transition: opacity 0.35s ease-in-out;
+    height: 600px !important;
+    bottom: 0 !important;
+}
+
+.legend h1 {
+    font-size: 2em;
+    padding: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.legend p {
+    font-size: 1.2em;
+    padding: 10px;
+    color: #fff;
+    text-transform: lowercase;
+    line-height: 20px;
+}
+
+.legend button {
+    background-color: #fff;
+    color: #111;
+    padding: 10px 30px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #888;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.legend button:hover {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #111;
+}
+
+.carousel .slide .legend {
+    background-color: rgba(0, 0, 0, 0.508);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        width: 100%;
+        font-family: 'Lato', sans-serif;
+        background-color: #555;
+    }
+
+    .active {
+        background-color: #6739b7;
+        color: #fff !important;
+        border: 1px solid #6739b7;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        width: 100%;
+        font-family: 'Lato', sans-serif;
+        background-color: #efefef;
+
+    }
+
+    .active {
+        background-color: #6739b7 !important;
+        color: #fff !important;
+        border: 1px solid #6739b7 !important;
+
+    }
+}

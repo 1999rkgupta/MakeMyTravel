@@ -1,0 +1,246 @@
+#profileBlock>article {
+    height: 90vh;
+    display: flex;
+}
+
+.sidebarProfile {
+    flex-basis: 20%;
+    background-color: #efefef;
+}
+
+.mainProfileBlock {
+    flex-basis: 80%;
+    background-color: #fff;
+}
+
+.mainProfileBlock>aside {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+.mainProfileBlock>h1,
+.profilePhotoBlock>h1 {
+    font-size: 30px;
+    text-shadow: 1px 0 0 #3f51b1;
+    padding: 10px;
+    margin: 0px 0 10px;
+    color: deeppink;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #efefef;
+    border-bottom: 1px solid #efefef;
+}
+
+.mainProfileBlock aside figure img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    padding: 0px;
+}
+
+.mainProfileBlock aside h1 {
+    padding: 14px;
+    text-align: center;
+    font-size: 23px;
+    text-transform: capitalize;
+}
+
+.mainProfileBlock aside main h4 {
+    font-size: 16px;
+    color: #555;
+    letter-spacing: 1.5px;
+    font-weight: lighter;
+}
+
+.sidebarProfile ul li a {
+    width: 100%;
+    background-color: #fff;
+    padding: 14px;
+    display: block;
+    margin: 0 0;
+    color: #673ab7;
+    font-weight: 500;
+    border-bottom: 1px solid #ccc;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: ease all 0.7s;
+}
+
+.sidebarProfile ul li a:hover {
+    background-color: #673ab7;
+    color: #fff;
+}
+
+.asideIcon {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.asideIcon main {
+    position: absolute;
+    background: #8c9dff;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    color: #fff;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    cursor: pointer;
+    transition: ease all 0.7s;
+}
+
+.asideIcon:hover main {
+    opacity: 1;
+}
+
+.asideIcon {
+    color: #fff;
+}
+
+.mainProfileBlock>article {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.profilePhotoBlock>article {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 30vh;
+    padding: 20px 0;
+}
+
+.profilePhotoBlock form label {
+    display: block;
+    padding: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 20px;
+    color: #888;
+}
+
+.profilePhotoBlock form input {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.profilePhotoBlock form button,
+.profileForm button {
+    margin: 10px 0;
+    border-radius: 5px;
+    color: #fff;
+    padding: 15px 40px;
+    width: 100%;
+    background-color: #6739b7;
+    color: #fff;
+    border: 1px solid #6739b7;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.profilePhotoBlock form button:hover,
+.profileForm button:hover {
+    background-color: #9c27b0;
+    color: #fff;
+    border: 1px solid #6739b7;
+}
+
+.profilePhotoBlock article figure img {
+    width: 200px;
+    height: 200px;
+}
+
+.progress {
+    width: 99%;
+    /* background-color: #4caf50; */
+    color: #fff;
+    padding: 10px;
+    margin: 13px;
+    display: block;
+    border-radius: 3px;
+    border: 1px solid #8bc34a;
+}
+
+.profileForm {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.profileForm div {
+    flex-basis: 24%;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.profileForm div span {
+    padding: 5px 10px;
+    color: #6739b7;
+    margin: 2px 4px;
+    display: inline-flex;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+#textArea {
+    flex-basis: 100%;
+}
+
+.profileForm div label {
+    width: 100%;
+    display: block;
+    padding-block-end: 5px;
+    color: #111;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.profileForm div input[type="text"],
+.profileForm div textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.profileForm div input[type="radio"] {
+    margin: 0 4px;
+}
+
+.profileUser {
+    text-align: center;
+    padding: 10px 40px;
+    background: #efefef57;
+    color: #3f51b5;
+    font-size: 17px;
+    text-transform: capitalize;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+.profileUser p {
+    padding: 10px 0;
+}
+
+.profileUser strong {
+    color: deeppink;
+}

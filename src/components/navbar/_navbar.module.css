@@ -1,0 +1,210 @@
+.logoutBtn {
+    padding: 7px 15px;
+    font-size: 14px;
+    color: #6739b7;
+    display: inline-block;
+    margin: 0 6px;
+    border-radius: 5px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    border: 1px solid #6739b7;
+    cursor: pointer;
+}
+
+.avatarURL {
+    width: auto !important;
+    border: none !important;
+    padding: 0 !important;
+    display: inline-block !important;
+}
+
+.avatarURL img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin: 4px 10px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 620px) {
+    #navbarBlock {
+        background-color: #888;
+        height: 70px;
+        width: 100%;
+        box-shadow: 1px 0 3px white;
+    }
+
+    #navbarBlock article {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-between;
+        height: inherit;
+    }
+
+    #navbarBlock>article>.logoBlock>a {
+        color: #673ab7;
+        font-size: 16px;
+        font-weight: 900;
+        letter-spacing: 1px;
+        text-decoration: none;
+    }
+
+    .icon {
+        color: deeppink;
+        font-size: 25px;
+        font-weight: 900;
+        display: inline-block;
+        margin: 0 5px;
+    }
+
+    .menuBlock ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+    }
+
+    .menuBlock ul li a {
+        text-decoration: none;
+        padding: 6px 15px;
+        font-size: 14px;
+        color: #6739b7;
+        display: inline-block;
+        margin: 0 6px;
+        border-radius: 5px;
+        font-weight: 900;
+        letter-spacing: 1px;
+        border: 1px solid #6739b7;
+    }
+
+    .menuBlock ul li a:hover {
+        background-color: #6739b7;
+        color: #fff !important;
+        border: 1px solid #6739b7;
+    }
+
+    .hamBlock {
+        display: block;
+        position: relative;
+    }
+
+    .hamMenu {
+        background-color: #fff;
+        height: auto;
+        width: 110px;
+        border-radius: 4px;
+        overflow: hidden;
+        padding: 1px 4px;
+        position: absolute;
+        z-index: 1;
+        right: 10px;
+        top: 60px;
+    }
+
+    .hamMenu ul {
+        list-style: none;
+    }
+
+    .hamMenu ul a {
+        text-decoration: none;
+        color: #6739b7;
+        display: inline-block;
+        padding: 3px 10px;
+        width: 100%;
+        border-bottom: 1px solid #777;
+    }
+
+    .hamMenu ul li:last-child {
+        border: none;
+    }
+
+    .menuBlock {
+        display: none;
+    }
+}
+
+.hamBlock {
+    padding: 5px 6px 2px;
+    border-radius: 50%;
+    color: deeppink;
+    border-color: deeppink;
+    font-size: 18px;
+}
+
+@media only screen and (min-width: 768px) {
+    #navbarBlock {
+        background-color: #fff;
+        height: 60px;
+        width: 100%;
+        box-shadow: 1px 0 3px #222;
+        margin-bottom: 2px;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+
+    .hamBlock {
+        padding: 5px 6px 2px;
+        border-radius: 50%;
+        color: deeppink;
+        border-color: deeppink;
+        font-size: 18px;
+        display: none;
+    }
+
+    .hamMenu {
+        display: none;
+    }
+
+    #navbarBlock article {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-between;
+        height: inherit;
+    }
+
+    #navbarBlock>article>.logoBlock>a {
+        color: #673ab7;
+        font-size: 19px;
+        font-weight: 900;
+        letter-spacing: 1.4px;
+        text-decoration: none;
+    }
+
+    .icon {
+        color: deeppink;
+        font-size: 30px;
+        font-weight: 900;
+        display: inline-block;
+        margin: 0 5px;
+    }
+
+    .menuBlock ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+    }
+
+    .menuBlock ul>li>a {
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 14px;
+        color: #6739b7;
+        display: inline-block;
+        margin: 0 6px;
+        border-radius: 5px;
+        font-weight: 900;
+        letter-spacing: 1.4px;
+        border: 1px solid #6739b7;
+    }
+
+    .menuBlock ul li a:hover {
+        background-color: #6739b7;
+        color: #fff !important;
+        border: 1px solid #6739b7;
+    }
+}
